@@ -1,0 +1,69 @@
+.Mexican {
+    position: relative;
+}
+
+.flag {
+    display: grid;
+    grid-template-columns: repeat(3, 33vw);
+    grid-template-rows: repeat(3, 33vh);
+}
+
+.row1 {
+    background-color: red;
+}
+
+.row2 {
+    background-color: white;
+}
+
+.row3 {
+    background-color: green;
+}
+
+
+
+.box {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.eagle {
+    background: no-repeat url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Coat_of_arms_of_Mexico.svg/800px-Coat_of_arms_of_Mexico.svg.png');
+    background-size: contain;
+    width: 33vh;
+    height: 33vh;
+    z-index: 10;
+    top: 35%;
+    right: 33%;
+    position: absolute;
+}
+
+@media (max-width: 400px) {
+    .eagle {
+        background: no-repeat url('https://freesvg.org/img/stegosaurus_03.png');
+        background-size: contain;
+        top: unset;
+        bottom: -374px;
+        right: 45%;
+    }
+
+
+    .Mexican {
+        grid-template-columns: 100vw;
+        grid-template-rows: 22vh;
+    }
+
+    .row1 {
+        background-color: red;
+    }
+
+    .row2 {
+        background-color: white;
+    }
+
+    .row3 {
+        background-color: green;
+    }
+}
