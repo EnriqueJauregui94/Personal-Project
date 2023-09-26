@@ -1,0 +1,28 @@
+/* Shop.css */
+.Shop-Page {
+    padding: 20px;
+}
+
+.Category-Buttons {
+    margin-bottom: 20px;
+}
+
+.Product-List {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Product-Item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(25% - 20px);
+    /* Four products per row */
+    text-align: center;
+}
+
+.Product-Item img {
+    max-width: 100%;
+    height: auto;
+}
